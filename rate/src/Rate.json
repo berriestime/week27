@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "name": "Безлимитный 300",
+        "cost": "300",
+        "speed": "10",
+        "color": "blue",
+        "colorDark": "blueDark",
+        "isSelected": false
+    },{
+        "id": "2",
+        "name": "Безлимитный 450",
+        "cost": "450",
+        "speed": "50",
+        "color": "green",
+        "colorDark": "greenDark",
+        "isSelected": false
+    },{
+        "id": "3",
+        "name": "Безлимитный 550",
+        "cost": "550",
+        "speed": "100",
+        "color": "red",
+        "colorDark": "redDark",
+        "isSelected": true
+    },{
+        "id": "4",
+        "name": "Безлимитный 1000",
+        "cost": "1000",
+        "speed": "200",
+        "color": "black",
+        "colorDark": "blackDark",
+        "isSelected": false
+    }
+]
