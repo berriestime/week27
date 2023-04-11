@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./../Rate/Rate.css";
 
 function Rate(props) {
-  console.log(props.isSelected ? styles["selected"] : "");
-  console.log(props.isSelected);
   return (
     <div className={props.isSelected ? styles["selected"] : ""}>
       <div className={styles.rateCard}>
