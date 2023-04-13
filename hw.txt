@@ -1,0 +1,52 @@
+1.  ```
+    const myStyle = {
+        width: 200,
+        height: 50,
+	    fontSize: '1.5 em',
+        backgroundColor: 'red',
+    };
+
+    const Button = () => (
+        <button style={ myStyle }>Нажми меня</button>
+    )
+    ```
+    Ошибки нет.
+2.  В React css можно использовать:
+    - в инлайновой стилизации;
+    - таблицы стилей CSS (подключаем обычный css файл);
+    - CSS модули
+    - CSS препроцессоры
+3.  Если если карточке передать аттрибут addedToCart = 0, то будет отображаться кнопка "Заказать"
+4.  Для аттрибута addedToCart можно было бы еще добавить проверку на минусовые значения.
+5.  Можно создать компонент "New", рендерить его в addedToCart с проверкой пропса(который мы заблаговременно передали).
+    ```
+    ...
+    <div className="card-body">
+    {
+        props.new &&
+            <NewItem>
+    }
+    ...
+    {   addedToCart ? 
+            <AddToCartForm addedToCart={addedToCart} />
+            : <AddToCartButton />
+    }
+    ```
+6.  Три способа написания условного рендеринга:
+    - if;
+    - тернарный оператор;
+    - &&;
+7.  ```
+    function authenticate(props) {
+        ...
+        return{
+            (props.isAutorized && <Profile/>)
+        }
+        ...
+    ```
+8.  Главное преимущество препроцессора в том, что он исключает коллизии в названии классов.
+    Помимо объявления переменных через $ можно объявить переменные глобально:
+    :root{
+    --dark-black-color: #2e2e25;
+    --dark-blue-color: #7e9ce8;
+}
