@@ -34,7 +34,6 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^6.2.1",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
@@ -136,5 +135,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "postcss-loader": "^7.2.4"
   }
 }

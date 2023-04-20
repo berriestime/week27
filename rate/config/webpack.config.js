@@ -368,6 +368,23 @@ module.exports = function (webpackEnv) {
               ],
             },
             {
+              test: /\.s[ac]ss$/i,
+              use: [
+                // Creates `style` nodes from JS strings
+                "style-loader",
+                // Translates CSS into CommonJS
+                {
+                  loader: "css-loader",
+                  options: {
+                    modules: true,
+                  },
+                },
+                "postcss-loader",
+                // Compiles Sass to CSS
+                "sass-loader",
+              ],
+            },
+            {
               test: [/\.avif$/],
               type: "asset",
               mimetype: "image/avif",

@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "./../Rate/Rate.css";
+import styles from "./../Rate/Rate.scss";
+
+console.log(styles);
 
 function Rate(props) {
   return (
