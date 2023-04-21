@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./../Rate/Rate.scss";
 
-console.log(styles);
-
 function Rate(props) {
   return (
     <div className={props.isSelected ? styles["selected"] : ""}>
